@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9CBCBCF7-50CD-464D-966C-368EABF4D8C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OSGCapture</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(OSG_ROOT)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_ROOT)\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(OSG_ROOT)\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(OSG_ROOT)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_ROOT)\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(OSG_ROOT)\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(OSG_ROOT)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_ROOT)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(OSG_ROOT)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OSG_ROOT)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>Copy $(OSG_ROOT)\bin\osg111-osgd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgAnimationd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgDBd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgFXd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgGAd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgManipulatord.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgParticled.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgPresentationd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgShadowd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgSimd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTerraind.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTextd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgUtild.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgViewerd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgVolumed.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgWidgetd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\ot20-OpenThreadsd.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgAnimationd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgDBd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgFXd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgGAd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgManipulatord.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgParticled.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgPresentationd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgShadowd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgSimd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTerraind.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTextd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgUtild.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgViewerd.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgVolumed.pdb $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgWidgetd.pdb $(TargetDir)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>Copy $(OSG_ROOT)\bin\osg111-osg.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgAnimation.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgDB.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgFX.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgGA.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgManipulator.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgParticle.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgPresentation.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgShadow.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgSim.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgTerrain.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgText.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgUtil.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgViewer.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgVolume.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\osg111-osgWidget.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\ot20-OpenThreads.dll $(TargetDir)
+Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OSGCommon.h" />
+    <ClInclude Include="ScreenCapture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ScreenCapture.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
