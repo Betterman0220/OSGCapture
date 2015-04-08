@@ -19,6 +19,7 @@
 #endif
 #include <osgViewer/Viewer>
 #include <osgDB/ReadFile>
+#include <osgDB/WriteFile>
 #include <osg/Node>
 #include <osg/Geode>
 #include <osg/Geometry>

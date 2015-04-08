@@ -15,14 +15,14 @@ public:
 	class  WriteToImageFile : public osgViewer::ScreenCaptureHandler::CaptureOperation
 	{
 	public:
-		enum SavePolicy
+		enum class SavePolicy
 		{
 			OVERWRITE,
 			SEQUENTIAL_NUMBER
 			// ... any others?
 		};
 
-		WriteToImageFile(const std::string& filename, const std::string& extension, SavePolicy savePolicy = SEQUENTIAL_NUMBER);
+		WriteToImageFile(const std::string& filename, const std::string& extension, SavePolicy savePolicy = SavePolicy::SEQUENTIAL_NUMBER);
 
 		virtual void operator()(const osg::Image& image, const unsigned int context_id);
 

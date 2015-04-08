@@ -43,36 +43,6 @@ bool CScreenCapture::handle(const osgGA::GUIEventAdapter& ea, osgGA::GUIActionAd
 		break;
 	}
 
-	//case (osgGA::GUIEventAdapter::USER) ://自定义的事件，需要进入OSG的事件队列
-	//{
-	//	const OwnDefineEventAdpater* adpater = dynamic_cast<const MyEventAdpater *>(ea.getUserData());
-	//	switch (adpater->m_eventType)
-	//	{
-	//	case SAVE_IMAGE:// 保存图片的事件
-	//	{
-	//		if (getFramesToCapture() == 0)
-	//		{
-	//			setFramesToCapture(1);
-	//		}
-	//		addCallbackToViewer(*viewer);
-	//		return true;
-	//	}
-	//	default:
-	//		break;
-	//	}
-	//	//if (adpater->m_eventType == SaveImage )
-	//	//{
-	//	//	// Check that we will capture at least one frame.
-	//	//	// Just check for ==0, because >0 is means we're already
-	//	//	// capturing and <0 means it will capture all frames.
-	//	//	if (getFramesToCapture() == 0)
-	//	//	{
-	//	//		setFramesToCapture(1);
-	//	//	}
-	//	//	addCallbackToViewer(*viewer);
-	//	//	return true;
-	//	//}
-	//}
 	default:
 		break;
 	}
@@ -94,7 +64,7 @@ void CScreenCapture::WriteToImageFile::operator()(const osg::Image& image, const
 	}
 }
 
-CScreenCapture::WriteToImageFile::WriteToImageFile(const std::string& filename, const std::string& extension, SavePolicy savePolicy /*= SEQUENTIAL_NUMBER*/)
+CScreenCapture::WriteToImageFile::WriteToImageFile(const std::string& filename, const std::string& extension, SavePolicy savePolicy /*= SavePolicy::SEQUENTIAL_NUMBER*/)
 	: _filename(filename),
 	_extension(extension),
 	_savePolicy(savePolicy)

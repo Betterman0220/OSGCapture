@@ -209,11 +209,9 @@ Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OSGCommon.h" />
-    <ClInclude Include="ScreenCapture.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ScreenCapture.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
