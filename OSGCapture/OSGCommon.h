@@ -30,3 +30,4 @@
 #include <osg/Camera>
 #include <osg/GraphicsContext>
 #include <osg/MatrixTransform>
+#include <osg/Texture2D>

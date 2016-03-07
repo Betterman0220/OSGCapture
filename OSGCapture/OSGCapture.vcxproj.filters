@@ -26,5 +26,11 @@
     <ClInclude Include="OSGCommon.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="WindowCaptureCallback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCameraPostDrawCallback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

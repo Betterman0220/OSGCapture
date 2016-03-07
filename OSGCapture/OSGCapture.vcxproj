@@ -208,7 +208,9 @@ Copy $(OSG_ROOT)\bin\zlib.dll $(TargetDir)</Command>
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyCameraPostDrawCallback.h" />
     <ClInclude Include="OSGCommon.h" />
+    <ClInclude Include="WindowCaptureCallback.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
